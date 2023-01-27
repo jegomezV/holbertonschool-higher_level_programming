@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 num = number
 number = str(number)
 number = int(number[-1])
-if number < 0:
+if num < 0:
     number = -abs(number)
     print(f"Last digit of {num} is {number} and is less than 6 and not 0")
 elif number > 5:
