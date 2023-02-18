@@ -1,34 +1,28 @@
 #!/usr/bin/python3
-"""Tenth"""
+""" class Student """
 
 
 class Student:
-    """Student class"""
-
+    """ definition """
     def __init__(self, first_name, last_name, age):
-        """__init__ method
+        """ instantiation with
         Args:
-            first_name (str): first name
-            last_name (str): last name
-            age (int): age of student
+            first_name (str): public instance attributes
+            last_name (str): public instance attributes
+            age (int): public instance attributes
         """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """Serializes object to dictionary
-        Args:
-            attr (list): list of attributes to filter object dictionary
-        Returns:
-            object dictionary
-        """
-        obj_dict = self.__dict__
-        if not attrs:
-            return obj_dict
-        else:
-            filter_dict = {}
-            for att in attrs:
-                if hasattr(self, att):
-                    filter_dict[att] = obj_dict[att]
-            return filter_dict
+        """ public method that retrieves a dictionary representation
+        of a student instance """
+        if isinstance(attrs, list) and ([isinstance(n, str)] for n in attrs):
+            new_dictionary = {}
+            for words in attrs:
+                if words in self.__dict__:
+                    new_dictionary[words] = self.__dict__[words]
+            return new_dictionary
+
+        return self.__dict__
