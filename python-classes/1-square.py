@@ -1,1 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/python3#!/usr/bin/python3
+"""Script to create class Square"""
+
+
+class Square:
+    """Class Square"""
+    def __init__(self, size):
+        """Private attribute"""
+        self.__size = size
