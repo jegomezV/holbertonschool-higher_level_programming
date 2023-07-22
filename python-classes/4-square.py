@@ -1,11 +1,15 @@
-#!/usr/bin/python3#!/usr/bin/python3
-"""Script to create class Square"""
+#!/usr/bin/python3
+"""Class Square defines a Square"""
 
 
-class Square:
-    """Class Square"""
+class Square():
+    """Class initiation for square"""
     def __init__(self, size=0):
-        """Conditionals"""
+        """Definition of the class Square, the value size
+        must be an integer and >= 0
+        Args:
+            size (int): private attribute
+        """
         self.__size = size
         if type(size) is not int:
             raise ValueError("size must be an integer")
@@ -14,9 +18,9 @@ class Square:
 
     @property
     def size(self):
-        """Return size of square"""
+        """Return the size of the square"""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """set the self.__size to value, the value must be a
@@ -29,5 +33,6 @@ class Square:
             raise ValueError("size must be >= 0")
 
     def area(self):
-        """Define square area"""
+
+        """Return area of the square"""
         return self.__size**2
