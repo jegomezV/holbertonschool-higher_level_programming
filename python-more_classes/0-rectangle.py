@@ -2,6 +2,6 @@
 """Script to create a Rectangle class"""
 
 
-class rectangle:
+class Rectangle:
     """Rectangle class"""
     pass
