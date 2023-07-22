@@ -33,15 +33,15 @@ class Square():
             raise ValueError("size must be >= 0")
 
     def area(self):
-
         """Return area of the square"""
+
         return self.__size**2
 
     def my_print(self):
 
         """Print Square"""
-        for i in range(self.__size):
-            for j in range(self.__size):
+        for i in range(self.size):
+            for j in range(self.size):
                 print('*' , end=' ')
         if self.size == 0:
             print()
