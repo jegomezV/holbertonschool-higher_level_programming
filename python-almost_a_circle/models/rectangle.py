@@ -7,6 +7,7 @@ class Rectangle(Base):
     """Definition of the class Rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """__init__ method of rectangle class args:"""
         super().__init__(id)
         self.height = height
         self.width = width
