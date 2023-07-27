@@ -15,12 +15,13 @@ class Rectangle(Base):
         self.y = y
 
     @property
-    def heigh(self):
-        return self.__heigh
+    def height(self):
+        """Rectangle height"""
+        return self.__height
 
-    @heigh.setter
-    def heigh(self, value):
-        self.__heigh = value
+    @height.setter
+    def height(self, value):
+        self.__height = value
 
     @property
     def width(self):
