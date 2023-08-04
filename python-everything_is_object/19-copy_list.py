@@ -1,3 +1,2 @@
-#!/usr/bin/python3
-def copy_list(a_list):
-    return a_list[:]
+"""SQL: is a programming language used for managing and manipulating relational DB
+MySQL: relational database management system (RDBMS)"""
