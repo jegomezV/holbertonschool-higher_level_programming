@@ -1,5 +1,5 @@
 const char  = document.body.querySelector('#character');
-const url = 'https://swapi-api.hbtn.io/api/people/5/?format=json':
+const url = 'https://swapi-api.hbtn.io/api/people/5/?format=json';
 
 fetch(url)
     .then(response => {
